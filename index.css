@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 0%
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(62, 156, 233);
+}
+main{
+    border: 10px solid black;
+    background-image: linear-gradient(to right,green,blue) ;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+input{
+    border-radius: 100%;
+    font-size: 20px;
+    text-align: center;
+    height: 5vh;
+    width: 5vh;
+    margin: 10px;
+}
+#Total,#result{
+    width: 150px;
+    border-radius: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="script" href="index.js">
+    <script>
+        function dis(val) {
+            document.getElementById("result").value += val
+        }
+        function clr() {
+            document.getElementById('result').value = ""
+        }
+        function cal(){
+            let y = eval(document.getElementById('result').value)
+            document.getElementById('result').value = y
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <input type="text" id="result" placeholder="0" style="text-align: end; padding-right: 5px;">
+        <br>
+        <input type="button" id="clear" value="Cl" onclick="clr()">
+        <input type="button" id="plus" value="+" onclick="dis('+')">
+        <input type="button" id="subtract" value="-" onclick="dis('-')">
+        <br>
+        <input type="button" id="one" value="1" onclick="dis('1')">
+        <input type="button" id="two" value="2" onclick="dis('2')">
+        <input type="button" id="three" value="3" onclick="dis('3')">
+        <br>
+        <input type="button" id="four" value="4" onclick="dis('4')">
+        <input type="button" id="five" value="5" onclick="dis('5')">
+        <input type="button" id="six" value="6" onclick="dis('6')">
+        <br>
+        <input type="button" id="seven" value="7" onclick="dis('7')">
+        <input type="button" id="eight" value="8" onclick="dis('8')">
+        <input type="button" id="nine" value="9" onclick="dis('9')">
+        <br>
+        <input type="button" id="dot" value="." onclick='dis(".")'>
+        <input type="button" id="zero" value="0" onclick="dis('0')">
+        <input type="button" id="multiply" value="X" onclick="dis('*')">
+        <br>
+        <input type="button" id="divide" value="/" onclick="dis('/')">
+        <input type="button" value="(" onclick="dis('(')">
+        <input type="button" value=")" onclick="dis(')')">
+        <br />
+        <input type="button" id="Total" value="Calculate" onclick="cal()">
+    </main>
+</body>
+</html>
